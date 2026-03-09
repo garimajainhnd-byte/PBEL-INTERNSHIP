@@ -2,7 +2,7 @@ NAME - Garima Jain
 BATCH - 8
 [PROJECT - AI BASED EMOTION RECOGNIZE SYSTEM FROM TEXT]
 ## Presentation Recording
-[Watch Video](https://drive.google.com/https://drive.google.com/file/d/1GyHMd_sHGeINbizxsLMfbyKlinc5JwHs/view?usp=sharing)
+[Watch Video](https://drive.google.com/file/d/1GyHMd_sHGeINbizxsLMfbyKlinc5JwHs/view?usp=sharing)
 # PROJECT - 1
 ```
 import pandas as pd
