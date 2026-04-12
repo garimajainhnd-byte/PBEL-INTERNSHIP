@@ -2,7 +2,7 @@ NAME - Garima Jain
 BATCH - 8
 [PROJECT - AI BASED EMOTION RECOGNIZE SYSTEM FROM TEXT]
 # Presentation
-[Download PPT](https://drive.google.com/file/d/1B3KN_wtmWDnZDHWLyztqsTVhsqDTZRXA/view?usp=sharing)
+[Download PPT](https://drive.google.com/file/d/1ADUUmg4NVoq5Qw5tYfPkqEHCPXQHfI3W/view?usp=sharing)
 ## Presentation Recording
 [Watch Video](https://drive.google.com/file/d/1GyHMd_sHGeINbizxsLMfbyKlinc5JwHs/view?usp=sharing)
 # PROJECT - 1
