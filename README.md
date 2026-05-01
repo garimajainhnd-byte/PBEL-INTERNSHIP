@@ -1,7 +1,7 @@
 # 🧠 AI BASED EMOTION RECOGNITION SYSTEM 
 # Information
 Made By - Garima Jain
-PROJECT Title - AI BASED EMOTION RECOGNITIONSYSTEM 
+PROJECT Title - AI BASED EMOTION RECOGNITION SYSTEM 
 # Presentation
 [Download PPT](https://drive.google.com/file/d/1ADUUmg4NVoq5Qw5tYfPkqEHCPXQHfI3W/view?usp=sharing)
 
@@ -13,9 +13,9 @@ This project focuses on building an Artificial Intelligence system that can anal
 In today’s digital world, people express their feelings through social media, messages, and online platforms. This system helps in understanding those emotions automatically using Machine Learning and Natural Language Processing (NLP).
 
 The model is trained to classify text into different emotions such as:
-😊 Joy
-😠 Anger
-😢 Sadness
+Joy
+Anger
+Sadness
 
 # Methodology:
 1. The GoEmotions dataset was used for training and analysis
@@ -33,9 +33,9 @@ Data insights helped in understanding class balance
 
 # Results:
 The trained model successfully classifies text into:
-😊 Joy
-😠 Anger
-😢 Sadness
+Joy
+Anger
+Sadness
 THE SYSTEM PROVIDES:
 1. Predicted Emotion
 2. Confidence Level
