@@ -1,67 +1,47 @@
-NAME - Garima Jain
-BATCH - 8
-[PROJECT - AI BASED EMOTION RECOGNIZE SYSTEM FROM TEXT]
+# 🧠 AI BASED EMOTION RECOGNItion SYSTEM 
+# Information
+Made By - Garima Jain
+PROJECT Title - AI BASED EMOTION RECOGNITIONSYSTEM 
 # Presentation
 [Download PPT](https://drive.google.com/file/d/1ADUUmg4NVoq5Qw5tYfPkqEHCPXQHfI3W/view?usp=sharing)
-## Presentation Recording
-[Watch Video](https://drive.google.com/file/d/1GyHMd_sHGeINbizxsLMfbyKlinc5JwHs/view?usp=sharing)
-# PROJECT - 1
-```
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 
-df = pd.read_csv("go_emotions_dataset.csv")
+🧠 AI-Based Emotion Recognition System
+# Project Description
 
-print("First 5 rows of dataset:\n")
-print(df.head())
+This project focuses on building an Artificial Intelligence system that can analyze text data and identify human emotions expressed in it.
 
-print("\nDataset Info:\n")
-print(df.info())
+In today’s digital world, people express their feelings through social media, messages, and online platforms. This system helps in understanding those emotions automatically using Machine Learning and Natural Language Processing (NLP).
 
-df = df.dropna()
+The model is trained to classify text into different emotions such as:
+😊 Joy
+😠 Anger
+😢 Sadness
 
-df = df[['text','joy','anger','sadness']]
+# Methodology:
+1. The GoEmotions dataset was used for training and analysis
+2. Dataset contains 211,000+ text samples labeled with multiple emotions
+3. Data cleaning and preprocessing were performed to remove noise
+4. Text was converted into numerical features using CountVectorizer (Bag of Words model)
+5. A Logistic Regression model was trained for emotion classification
+6. The model learns patterns in text and predicts the dominant emotion
 
-print("\nCleaned Data (first 5 rows):\n")
-print(df.head())
+# Data Visualization:
+To better understand the dataset:
+Emotion distribution was analyzed using bar graphs
+Key emotions like joy, anger, and sadness were visualized
+Data insights helped in understanding class balance
 
-show_graph = input("\n want to see the emotion distribution graph? (yes/no): ").strip().lower()
-if show_graph == 'yes':
-    emotion_count = df[['joy','anger','sadness']].sum()
-    print("\nEmotion Counts:\n", emotion_count)
-    
-    emotion_count.plot(kind='bar')
-    plt.title("Emotion Distribution")
-    plt.xlabel("Emotion")
-    plt.ylabel("Count")
-    plt.show()
-else:
-    print("Graph skipped.")
+# Results:
+The trained model successfully classifies text into:
+😊 Joy
+😠 Anger
+😢 Sadness
+THE SYSTEM PROVIDES:
+1. Predicted Emotion
+2. Confidence Level
+3. Text-based classification results
+The model performs well on unseen data and can effectively detect emotional tone from text.
 
-df['text'] = df['text'].str.lower()
-df['text_length'] = df['text'].apply(len)
-print("\nText with length (first 5 rows):\n")
-print(df[['text','text_length']].head())
-
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-
-X = df['text']
-y = df['joy']  
-
-vectorizer = CountVectorizer()
-X_vector = vectorizer.fit_transform(X)
-
-X_train, X_test, y_train, y_test = train_test_split(X_vector, y, test_size=0.2, random_state=42)
-
-model = LogisticRegression(max_iter=500)
-model.fit(X_train, y_train)
-
-accuracy = model.score(X_test, y_test)
-print("\nModel Accuracy:", accuracy)
-```
 <img width="1417" height="813" alt="image" src="https://github.com/user-attachments/assets/51269f19-5495-4349-9ed6-7138a112e3fb" />
 <img width="790" height="673" alt="image" src="https://github.com/user-attachments/assets/8ead34d0-3efc-4c8f-b892-a9956b6ac831" />
 <img width="797" height="636" alt="image" src="https://github.com/user-attachments/assets/e11f3c11-1536-4eef-8734-331a858ee107" />
